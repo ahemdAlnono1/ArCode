@@ -18,8 +18,8 @@
                 <span></span>
                 <span></span>
             </div>
-            <!-- <li class="new">new</li>
-            <li class="courses">courses</li> -->
+            <!-- <li class="new">new</li> -->
+            <li class="courses">courses</li>
             <li class="files">files</li>
             <li class="about">about</li>
             <li class="home li-active">home</li>
@@ -134,8 +134,39 @@
             </div>
         </div>
     </section>
-    <!-- <section id="courses" class="">courses</section>
-    <section id="new" class="">new</section> -->
+    <section id="courses" class="">
+        <a class="calc" href="https://www.youtube.com/playlist?list=PLZ3DS-YWz5VeH3meb-S0LL8mlPyf1T9CO">
+            <img src="./calculas.webp" alt="calculas">
+            <h1>Calculas</h1>
+            <span >D.jamal</span>
+        </a>
+        <a class="electronic" href="https://www.youtube.com/playlist?list=PLoiEx8wAxvXK2ipq8ufmBBQ4L37IuKUHL">
+            <img src="./electonic.webp" alt="electronic">
+            <h1>Electronic</h1>
+            <span>D.Hazem</span>
+        </a>
+        <a class="writing" href="https://www.youtube.com/playlist?list=PLB5gGz0GtA0_--hGtXaLQYF-Dkd2QedR_">
+            <img src="./writing.webp" alt="writing">
+            <h1>Writing skills</h1>
+            <span>D.Iyd</span>
+        </a>
+        <a class="java" href="https://www.youtube.com/playlist?list=PLCInYL3l2AajYlZGzU_LVrHdoouf8W6ZN">
+            <img src="./java.webp" alt="java">
+            <h1>Java</h1>
+            <span>D.Adel Naseme</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLIcTAUEndrp9C9NRJ5LcgWIkmW0878N3o" class="javaoop">
+            <img src="./javaoop.webp" alt="java oop">
+            <h1>Java</h1>
+            <span>java OOP</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PLkXK5Ys6YkPJeYfEHo8Rei1dToH6hB5e1" class="electronic">
+            <img src="./electronicAyead.webp" alt="Electronic">
+            <h1>Electronic</h1>
+            <span>D. Mohamed Ayead</span>
+        </a>
+    </section>
+    <!-- <section id="new" class="">new</section> -->
 
     <footer>
         <h4>اللهم زيني بالعلم  ,  و اكرمني بالحلم , و جملني بالعافية</h4>
@@ -153,7 +184,7 @@
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        navigator.serviceWorker.register('./sw.js').then(function(registration) {
           console.log('Service worker registered with scope:', registration.scope);
         }, function(err) {
           console.log('Service worker registration failed:', err);

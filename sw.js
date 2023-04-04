@@ -2,7 +2,7 @@
 // Register the service worker
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      navigator.serviceWorker.register('./sw.js').then(function(registration) {
         console.log('Service worker registered with scope: ', registration.scope);
       }, function(err) {
         console.log('Service worker registration failed: ', err);
@@ -20,7 +20,12 @@ if ('serviceWorker' in navigator) {
           './main.css',
           './main.js',
           './الترا تك (2).png',
-          './university.webp'
+          './university.webp',
+          './electonic.webp',
+          './electronicAyead.webp',
+          './java.webp',
+          './javaoop.webp',
+          './writing.webp'
         ]);
       })
     );

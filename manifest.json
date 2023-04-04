@@ -11,10 +11,43 @@
         "src": "./university.webp",
         "type": "image/webp",
         "sizes": "1152x750"
+      },
+      {
+        "src": "./electonic.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
+      },
+      {
+        "src": "./electronicAyead.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
+      },
+      {
+        "src": "./calculas.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
+      },
+      {
+        "src": "./java.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
+      },
+      {
+        "src": "./javaoop.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
+      },
+      {
+        "src": "./writing.webp",
+        "type": "image/webp",
+        "sizes": "168x94"
       }
     ],
-    "start_url": "/",
+    "start_url": ".",
+    "scope": ".",
+    "description": "Ultra Tech - your one stop shop for all things tech!",
     "background_color": "#f7f7f7",
     "theme_color": "#007bff",
-    "display": "standalone"
+    "display": "standalone",
+    "orientation": "any"
   }
