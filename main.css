@@ -1,0 +1,238 @@
+html::-webkit-scrollbar{
+    width:0px;
+}
+*::selection{
+    background-color: yellow;
+    color:black;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    top:0;
+    z-index:99;
+    background:linear-gradient(to bottom right , rgba(0, 20, 131, 0.534) , rgba(5, 5, 41, 0.575));
+}
+
+nav span img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+ul{
+    display:flex;
+    gap:10px;
+    overflow: hidden;
+}
+li{
+    list-style: none;
+    cursor:pointer;
+    font-size:20px;
+    padding:10px;
+    transition:500ms;
+    color:white;
+}
+li:hover , li:active , li.li-active{
+    background-color:blue;
+    scale:1.2;
+}
+section{
+    display:none;
+    background:linear-gradient(to right bottom , black 10% 10% , rgb(0, 0, 121) 90% 90%);
+}
+.sec-active{
+    display:flex;
+}
+#home{
+    flex-direction: column;
+    overflow-x:hidden;
+    padding-bottom:40px;
+}
+#home div:not(.home-header){
+    padding:10px;
+}
+
+.home-header{
+    width:100dvw;
+    position: relative;
+}
+.home-header img{
+    width:100%;
+    height: 40dvh;
+    object-fit: cover;
+}
+.nav-icon{
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding:5px;
+    width:fit-content;
+    gap:5px;
+    display:none;
+    cursor:pointer;
+}
+.nav-icon span{
+    background-color: black;
+    width:30px;
+    height: 4px;
+}
+ul[expande =true]{
+    height: fit-content;
+    padding:14px;
+}
+ul[expanded=false]{
+    height: 50px;
+}
+.home-body1{
+    text-align: center;
+}
+.home-body1 h1{
+    color:rgb(64, 64, 252);
+    font-size:40px;
+}
+.home-body1 h4{
+    color:rgb(98, 98, 226)
+}
+.home-body1 h2{
+    color:yellow;
+}
+.home-body1 a{
+    background-color: blue;
+    color:white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border:none;
+    width:30%;
+    font-size:20px;
+    cursor: pointer;
+}
+.home-body1 a:hover{
+    background:linear-gradient(to bottom , black , rgb(4, 4, 63));
+    color:white;
+}
+.Aug-sec{
+    text-align: center;
+}
+.Aug-sec h1{
+    color:yellow;
+    font-size:35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Aug-sec span{
+    color:white;
+    font-size:18px;
+}
+.Aug-sec button{
+    background-color: blue;
+    width: 180px;
+    padding:10px;
+    cursor: pointer;
+    border:none;
+    transition:300ms;
+}
+.Aug-sec button:hover{
+    background:linear-gradient(to bottom , black , rgb(4, 4, 63));
+    scale:1.2;
+}
+.Aug-sec button a{
+    color:white;
+    font-size:18px;
+    text-decoration: none;
+}
+#about{
+    justify-content: space-around;
+    align-items: start;
+    color:white;
+    padding-bottom:70px;
+}
+#about div{
+    margin-top:40px;
+    font-size:20px;
+    padding:20px;
+    line-height: 1.3;
+}
+#about .right{
+    font-size:24px;
+}
+#about .left{
+    color:yellow;
+    margin-top:440px;
+    line-height: 2;
+}
+#files{
+    flex-direction: column;
+    text-align: center;
+    color:white;
+}
+#files h1{
+    margin-top:20px;
+    color:yellow;
+    font-size:30px;
+}
+#files .first .term2{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    padding:40px;
+}
+#files .first .term2 button{
+    /* padding:20px; */
+    background: linear-gradient(to bottom ,rgb(34, 34, 102), darkblue);
+    border:none;
+    cursor: pointer;
+}
+#files .first .term2 button a:hover{
+    background:linear-gradient(to top ,rgb(62, 62, 255), rgb(22, 22, 65));
+}
+.term2 button a{
+    display:block;
+    padding:20px;
+    font-size:20px;
+}
+
+footer{
+    background:linear-gradient(to right bottom , rgb(0, 34, 97) 10% 10% , rgb(0, 0, 121) 90% 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    gap:30px;
+}
+footer h4{
+    color:white;
+    font-size:20px;
+    text-align: center;
+}
+.media-app span a svg{
+    width:40px;
+    height: 40px;
+}
+@media screen and (max-width:480px) {
+    nav ul{
+        display:flex;
+        flex-direction: column-reverse;
+        padding:16px;
+    }
+    .nav-icon{
+        display:flex;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about .left{
+        margin-top: 20px;
+    }
+}
