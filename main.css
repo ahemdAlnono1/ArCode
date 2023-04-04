@@ -304,6 +304,7 @@ footer h4{
     border:5px solid rgb(216, 44, 44);
     color:white;
 }
+/* finish the style for desktop and start mobile style */
 @media screen and (max-width:480px) {
     nav ul{
         display:flex;
