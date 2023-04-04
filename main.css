@@ -258,6 +258,52 @@ footer h4{
     font-size:13px;
     font-weight: bold;
 }
+#contact form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width:100dvw;
+    justify-content: center;
+    padding:70px;
+}
+#contact form input{
+    font-size:25px;
+    padding:10px 50px;
+    background-color: rgb(9, 2, 107);
+    border:none;
+}
+#contact form textarea{
+    font-size:20px;
+    padding:10px;
+    background-color: rgb(2, 0, 141);
+}
+#contact form button{
+    padding:20px;
+    font-size:20px;
+    background-color:blue;
+    color:white;
+    cursor:pointer;
+    border:none;
+}
+#contact form button:hover{
+    background-color:rgb(15, 0, 151);
+}
+#contact form input[type=reset]{
+    cursor:pointer;
+}
+#contact form input:hover ,#contact form input:focus{
+    background-color:blue;
+    color:white;
+    outline:none;
+}
+#contact form input:valid , #contact form textarea:valid{
+    border:5px solid green;
+    color:white;
+}
+#contact form input:invalid{
+    border:5px solid rgb(216, 44, 44);
+    color:white;
+}
 @media screen and (max-width:480px) {
     nav ul{
         display:flex;
@@ -291,5 +337,8 @@ footer h4{
         justify-content: center;
         align-items: center;
         align-content: center;
+    }
+    #contact form{
+        padding:5px;
     }
 }
