@@ -1,6 +1,14 @@
 html::-webkit-scrollbar{
     width:0px;
 }
+:root{
+    --sec-color:linear-gradient(to right bottom , rgb(71, 0, 129) 10% 10% , rgb(0, 0, 245) 90% 90%);
+    --nav-color:linear-gradient(to bottom right , rgba(40, 65, 204, 0.534) , rgba(30, 30, 150, 0.575));;
+    --btn:linear-gradient(to bottom ,rgb(88, 88, 252), rgb(41, 41, 165));
+    --btn-hover:linear-gradient(to bottom , rgb(173, 50, 255) , rgb(22, 22, 238));
+    --dark-btn:linear-gradient(to bottom , rgb(34, 75, 255) , rgb(106, 0, 177));
+    --video:linear-gradient(to bottom right , rgb(86, 255, 241) 10% 10%, rgb(88, 88, 236) 90% 90%);
+}
 *::selection{
     background-color: yellow;
     color:black;
@@ -22,7 +30,7 @@ nav{
     position:sticky;
     top:0;
     z-index:99;
-    background:linear-gradient(to bottom right , rgba(40, 65, 204, 0.534) , rgba(30, 30, 150, 0.575));
+    background:var(--nav-color);
 }
 
 nav span img{
@@ -49,7 +57,7 @@ li:hover , li:active , li.li-active{
 }
 section{
     display:none;
-    background:linear-gradient(to right bottom , rgb(71, 0, 129) 10% 10% , rgb(0, 0, 245) 90% 90%);
+    background:var(--sec-color);
     overflow-x: hidden;
 }
 .sec-active{
@@ -119,7 +127,7 @@ ul[expanded=false]{
     cursor: pointer;
 }
 .home-body1 a:hover{
-    background:linear-gradient(to bottom , rgb(173, 50, 255) , rgb(22, 22, 238));
+    background:var(--btn-hover);
     color:white;
 }
 .Aug-sec{
@@ -144,7 +152,7 @@ ul[expanded=false]{
     transition:300ms;
 }
 .Aug-sec button:hover{
-    background:linear-gradient(to bottom , rgb(34, 75, 255) , rgb(106, 0, 177));
+    background:var(--dark-btn);
     scale:1.2;
 }
 .Aug-sec button a{
@@ -189,7 +197,7 @@ ul[expanded=false]{
 }
 #files .first .term2 button{
     /* padding:20px; */
-    background: linear-gradient(to bottom ,rgb(88, 88, 252), rgb(41, 41, 165));
+    background: var(--btn);
     border:none;
     cursor: pointer;
 }
@@ -203,7 +211,7 @@ ul[expanded=false]{
 }
 
 footer{
-    background:linear-gradient(to right bottom , rgb(0, 34, 97) 10% 10% , rgb(0, 0, 121) 90% 90%);
+    background:var(--sec-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,7 +243,7 @@ footer h4{
     margin-top:40px;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(to bottom right , rgb(86, 255, 241) 10% 10%, rgb(88, 88, 236) 90% 90%);
+    background:var(--video);
     width:340px;
     height: 280px;
     gap:20px;
