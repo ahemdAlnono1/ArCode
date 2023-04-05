@@ -19,7 +19,7 @@ if ('serviceWorker' in navigator) {
           './index.html',
           './main.css',
           './main.js',
-          './الترا تك (2).png',
+          './ArCode.jpeg',
           './university.webp',
           './electonic.webp',
           './electronicAyead.webp',

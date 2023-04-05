@@ -296,7 +296,7 @@ footer h4{
     color:white;
     outline:none;
 }
-#contact form input:valid , #contact form textarea:valid{
+#contact form input:valid{
     border:5px solid green;
     color:white;
 }
