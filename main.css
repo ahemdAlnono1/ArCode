@@ -345,8 +345,9 @@ footer h4{
 }
 
 .left .cub{
-    margin-bottom:100px;
-    margin-right:80px;
+    /* margin-bottom:100px; */
+    translate: -30% -20%;
+    /* margin-right:80px; */
 }
 .cub{
     position:relative;
