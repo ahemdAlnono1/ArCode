@@ -342,6 +342,9 @@ footer h4{
     #contact form{
         padding:5px;
     }
+    .cub{
+        scale:.5;
+    }
 }
 
 .left .cub{
