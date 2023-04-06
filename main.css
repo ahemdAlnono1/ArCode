@@ -43,9 +43,6 @@ ul{
     display:flex;
     gap:10px;
     overflow: hidden;
-    height: fit-content;
-    animation-duration: 2s;
-    animation-name: expand;
 }
 li{
     list-style: none;
