@@ -18,6 +18,7 @@ html::-webkit-scrollbar{
     margin:0;
     padding:0;
     direction: rtl;
+    color:white;
 }
 a{
     text-decoration: none;
@@ -228,6 +229,10 @@ footer h4{
     width:40px;
     height: 40px;
 }
+.media-app{
+    display:flex;
+    gap:30px;
+}
 
 #courses{
     flex-direction: row;
@@ -312,8 +317,38 @@ footer h4{
     border:5px solid rgb(216, 44, 44);
     color:white;
 }
+#learning{
+    flex-direction: column;
+}
+.path div{
+    width: 90%;
+    margin: 5px auto;
+    background-color:black;
+    padding:20px;
+    border-radius: 20px;
+}
+#learning div div h1{
+    color:white;
+    font-size:30px;
+}
+#learning div div h1 p{
+    font-size:12px;
+    color:rgb(255, 255, 128);
+}
+.path .head{
+    background-color: red;
+}
+.path:not(:first-child){
+    margin-top:140px;
+}
 /* finish the style for desktop and start mobile style */
 @media screen and (max-width:480px) {
+    .fundumental{
+        padding:10px;
+    }
+    .fundumental div{
+        width: 100%;
+    }
     nav ul{
         display:flex;
         flex-direction: column-reverse;
@@ -353,6 +388,12 @@ footer h4{
     }
     .cub{
         scale:.5;
+    }
+    .media-app{
+        display:flex;
+        justify-content: space-around;
+        width:100dvw;
+        gap:0;
     }
 }
 
