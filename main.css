@@ -41,8 +41,11 @@ nav span img{
 }
 ul{
     display:flex;
-    gap:10px;
+    gap:15px;
     overflow: hidden;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+    animation-name:expand;
 }
 li{
     list-style: none;
@@ -98,27 +101,21 @@ section{
     width:30px;
     height: 4px;
 }
-ul[expande =true]{
-    /* padding:14px; */
-    /* height: fit-content; */
+ul[expande = true]{
     animation-name: expand;
-    /* animation-duration: 2s; */
-    animation-fill-mode: forwards;
+
 }
-ul[expanded=false]{
-    /* height: 50px; */
+ul[expanded = false]{
     animation-name: unexpand;
-    /* animation-duration: 2s; */
-    animation-fill-mode: forwards;
 }
 
 @keyframes expand {
-    0% { height: 60px; }
-    100% { height: 380px; }
+    from { height: 50px; }
+    to { height: 400px; }
   }
 @keyframes unexpand {
-    0% { height: 380px; }
-    100% { height: 60px; }
+    from { height: 400px; }
+    to { height: 50px; }
   }
 .home-body1{
     text-align: center;
