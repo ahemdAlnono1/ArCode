@@ -234,6 +234,7 @@ footer h4{
     flex-wrap:wrap;
     gap:20px;
     padding:40px;
+    overflow:hidden;
 }
 #courses a{
     margin-top:40px;
@@ -335,7 +336,7 @@ input:invalid{
         font-size:40px !important;
     }
     #courses{
-        padding:0px;
+        padding:50px 0px;
     }
     #contact form{
         padding:5px;
