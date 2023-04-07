@@ -235,7 +235,6 @@ footer h4{
     font-family: Arial, Helvetica, sans-serif;
 }
 #courses a{
-    margin-top:40px;
     display: flex;
     flex-direction: column;
     background:var(--video);
@@ -244,7 +243,6 @@ footer h4{
     gap:20px;
     position: relative;
     padding:0;
-    border-radius: 50px;
 }
 #courses a:hover::before{
     content:"Watch Now";
