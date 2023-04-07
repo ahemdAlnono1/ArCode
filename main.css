@@ -9,6 +9,9 @@ html::-webkit-scrollbar{
     --dark-btn:linear-gradient(to bottom , rgb(34, 75, 255) , rgb(106, 0, 177));
     --video:linear-gradient(to bottom right , rgb(86, 255, 241) 10% 10%, rgb(88, 88, 236) 90% 90%);
 }
+html{
+    scroll-behavior: smooth;
+}
 *::selection{
     background-color: yellow;
     color:black;
@@ -243,17 +246,7 @@ footer h4{
     gap:20px;
     position: relative;
     padding:0;
-}
-#courses a:hover::before{
-    content:"Watch Now";
-    width:100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(60, 72, 87, 0.664);
-    font-size:25px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 #courses a span{
     font-size:13px;
@@ -363,7 +356,7 @@ input:invalid{
         font-size:40px !important;
     }
     #courses{
-        padding:0;
+        padding:0px;
     }
     #contact form{
         padding:5px;
