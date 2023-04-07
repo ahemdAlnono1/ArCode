@@ -291,26 +291,6 @@ input:valid{
 input:invalid{
     border:2px solid rgb(216, 44, 44);
 }
-.path div{
-    width: 90%;
-    margin: 5px auto;
-    background-color:black;
-    padding:20px;
-    border-radius: 20px;
-}
-#learning div div h1{
-    font-size:30px;
-}
-#learning div div h1 p{
-    font-size:12px;
-    color:rgb(255, 255, 128);
-}
-.path .head{
-    background-color: red;
-}
-.path:not(:first-child){
-    margin-top:140px;
-}
 /* finish the style for desktop and start mobile style */
 @media screen and (max-width:480px) {
     a{
