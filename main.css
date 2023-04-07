@@ -234,7 +234,6 @@ footer h4{
     flex-wrap:wrap;
     gap:20px;
     padding:40px;
-    overflow-x:hidden;
 }
 #courses a{
     margin-top:40px;
