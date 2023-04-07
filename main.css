@@ -4,8 +4,8 @@ html::-webkit-scrollbar{
 :root{
     --sec-color:linear-gradient(to right bottom , rgb(71, 0, 129) 10% 10% , rgb(0, 0, 245) 90% 90%);
     --nav-color:linear-gradient(to bottom right , rgba(40, 65, 204, 0.534) , rgba(30, 30, 150, 0.575));;
-    --btn:linear-gradient(to bottom ,rgb(88, 88, 252), rgb(41, 41, 165));
-    --btn-hover:linear-gradient(to bottom , rgb(173, 50, 255) , rgb(22, 22, 238));
+    --btn:rgb(0, 114, 114);
+    --btn-hover:rgb(51, 0, 99);
     --dark-btn:linear-gradient(to bottom , rgb(34, 75, 255) , rgb(106, 0, 177));
     --video:linear-gradient(to bottom right , rgb(86, 255, 241) 10% 10%, rgb(88, 88, 236) 90% 90%);
 }
@@ -20,9 +20,22 @@ html::-webkit-scrollbar{
     direction: rtl;
     color:white;
 }
+button , button a , a{
+    background-color: var(--btn);
+    padding:20px;
+    border:none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+button:hover , button a:hover , section a:hover{
+    background-color: var(--btn-hover);
+}
 a{
     text-decoration: none;
-    color:white;
+    border:none;
+    cursor: pointer;
+    font-size:20px;
+    border-radius: 20px;
 }
 nav{
     display:flex;
@@ -63,14 +76,15 @@ section{
     display:none;
     background:var(--sec-color);
     overflow-x: hidden;
+    padding-bottom:70px;
 }
 .sec-active{
     display:flex;
+    flex-direction: column;
 }
 #home{
-    flex-direction: column;
     overflow-x:hidden;
-    padding-bottom:40px;
+    text-align: center;
 }
 #home div:not(.home-header){
     padding:10px;
@@ -117,9 +131,6 @@ ul[expanded = false]{
     from { height: 400px; }
     to { height: 50px; }
   }
-.home-body1{
-    text-align: center;
-}
 .home-body1 h1{
     color:rgb(237, 255, 156);
     font-size:40px;
@@ -131,21 +142,12 @@ ul[expanded = false]{
     color:yellow;
 }
 .home-body1 a{
-    background-color: blue;
-    color:white;
+    background-color: rgb(0, 120, 156);
     padding: 10px 30px;
-    text-decoration: none;
-    border:none;
     width:30%;
-    font-size:20px;
-    cursor: pointer;
 }
 .home-body1 a:hover{
     background:var(--btn-hover);
-    color:white;
-}
-.Aug-sec{
-    text-align: center;
 }
 .Aug-sec h1{
     color:yellow;
@@ -157,28 +159,13 @@ ul[expanded = false]{
     color:white;
     font-size:18px;
 }
-.Aug-sec button{
-    background-color: blue;
-    width: 180px;
-    padding:10px;
-    cursor: pointer;
-    border:none;
-    transition:300ms;
-}
-.Aug-sec button:hover{
-    background:var(--dark-btn);
-    scale:1.2;
-}
 .Aug-sec button a{
-    color:white;
     font-size:18px;
-    text-decoration: none;
 }
 #about{
+    flex-direction: row;
     justify-content: space-around;
     align-items: start;
-    color:white;
-    padding-bottom:70px;
 }
 #about div{
     margin-top:40px;
@@ -194,9 +181,10 @@ ul[expanded = false]{
     line-height: 2;
 }
 #files{
-    flex-direction: column;
     text-align: center;
-    color:white;
+}
+#files a{
+    padding:20px;
 }
 #files h1{
     margin-top:20px;
@@ -209,21 +197,6 @@ ul[expanded = false]{
     gap:20px;
     padding:40px;
 }
-#files .first .term2 button{
-    /* padding:20px; */
-    background: var(--btn);
-    border:none;
-    cursor: pointer;
-}
-#files .first .term2 button a:hover{
-    background:linear-gradient(to top ,rgb(62, 62, 255), rgb(22, 22, 65));
-}
-.term2 button a{
-    display:block;
-    padding:20px;
-    font-size:20px;
-}
-
 footer{
     background:var(--sec-color);
     display: flex;
@@ -232,6 +205,10 @@ footer{
     justify-content: center;
     padding:20px;
     gap:30px;
+}
+footer a{
+    padding:0;
+    background-color: transparent;
 }
 footer h4{
     color:white;
@@ -266,6 +243,8 @@ footer h4{
     height: 280px;
     gap:20px;
     position: relative;
+    padding:0;
+    border-radius: 50px;
 }
 #courses a:hover::before{
     content:"Watch Now";
@@ -292,46 +271,36 @@ footer h4{
     justify-content: center;
     padding:70px;
 }
-#contact form input{
+form input{
     font-size:25px;
     padding:10px 50px;
     background-color: rgb(9, 2, 107);
     border:none;
 }
-#contact form textarea{
+form textarea{
     font-size:20px;
     padding:10px;
     background-color: rgb(2, 0, 141);
 }
-#contact form button{
-    padding:20px;
+form button{
     font-size:20px;
     background-color:blue;
-    color:white;
-    cursor:pointer;
-    border:none;
 }
-#contact form button:hover{
+form button:hover{
     background-color:rgb(15, 0, 151);
 }
-#contact form input[type=reset]{
+input[type=reset]{
     cursor:pointer;
 }
-#contact form input:hover ,#contact form input:focus{
+input:hover ,input:focus{
     background-color:blue;
-    color:white;
     outline:none;
 }
-#contact form input:valid{
-    border:5px solid green;
-    color:white;
+input:valid{
+    border:2px solid green;
 }
-#contact form input:invalid{
-    border:5px solid rgb(216, 44, 44);
-    color:white;
-}
-#learning{
-    flex-direction: column;
+input:invalid{
+    border:2px solid rgb(216, 44, 44);
 }
 .path div{
     width: 90%;
@@ -341,7 +310,6 @@ footer h4{
     border-radius: 20px;
 }
 #learning div div h1{
-    color:white;
     font-size:30px;
 }
 #learning div div h1 p{
@@ -356,6 +324,13 @@ footer h4{
 }
 /* finish the style for desktop and start mobile style */
 @media screen and (max-width:480px) {
+    a{
+        padding:10px;
+    }
+    .term2{
+        padding:4px;
+        gap:10px;
+    }
     .fundumental{
         padding:10px;
     }
@@ -392,16 +367,10 @@ footer h4{
         font-size:40px !important;
     }
     #courses{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
+        padding:0;
     }
     #contact form{
         padding:5px;
-    }
-    .cub{
-        scale:.5;
     }
     .media-app{
         display:flex;

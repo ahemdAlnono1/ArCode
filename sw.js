@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
           '/',
           './index.html',
           './main.css',
-          './main.js',
+          // './main.js',
           './ArCode.jpeg',
           './university.webp',
           './electonic.webp',
